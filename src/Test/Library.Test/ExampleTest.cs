@@ -16,8 +16,8 @@ namespace Test.Library
         {
             int expected = 90;
             Enano legolas = new Enano ("Tony1", 100 , 10, 10);
-            Enano enanoVirgo1  = new Enano("Tony", 100 , 10, 10);
-            legolas.RecibirDanio(enanoVirgo1.Danio);
+            Enano enano1  = new Enano("Tony", 100 , 20, 10);
+            legolas.RecibirDanio(enano1.Danio);
             Assert.AreEqual(legolas.Vida, expected); 
        
         }
