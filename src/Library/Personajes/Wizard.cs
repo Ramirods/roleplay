@@ -1,15 +1,15 @@
 using System.Collections.Generic;
-namespace RoleplayGame
-{
-    public class Dwarf : ICharacters
-    {
-        public string name { get; set; }
-        public int health { get; set; } 
-        public int attack { get; set; }
-        public int defense { get; set; }
-        List<IItems> inventory;
+namespace RoleplayGame;
 
-        public Dwarf(string name, int attack, int defense)
+public class Wizard : ICharacters
+{
+    public string name { get; set; }
+    public int health { get; set; }
+    public int attack { get; set; }
+    public int defense { get; set; }
+    List<IItems> inventory;
+
+   public Wizard (string name, int attack, int defense)
         {
             this.name = name;
             this.attack = attack;
@@ -17,10 +17,7 @@ namespace RoleplayGame
             this.health = 100;
             List<IItems> inventory = new List<IItems>();
         } 
-
-
-
-        public void EquipItems(string item)
+            public void EquipItems(string item)
         {
 
             for (int i = 0; i < inventory.Count; i++ )
@@ -40,12 +37,6 @@ namespace RoleplayGame
             }
         }
 
-        
-        public void PickUpItem(IItems item)
-        {
-            this.inventory.Add(item);
-        }
-
         public void ReceiveAttack(int power)
         {
             if (this.defense < power)
@@ -58,5 +49,6 @@ namespace RoleplayGame
         {
             this.health = 100;
         }
-    }
 }
+ 
+    
