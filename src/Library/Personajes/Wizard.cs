@@ -9,7 +9,7 @@ public class Wizard : ICharacters
     public int defense { get; set; }
     public SpellsBook spellsBook;
     public bool hasLearnedSpells;
-    List<IItems> inventory;
+    List<IItems> inventory = new List<IItems>();
 
    public Wizard (string name, int attack, int defense)
         {
@@ -45,12 +45,12 @@ public class Wizard : ICharacters
     }
 
     public void ReceiveAttack(int power)
-    {
-        if (this.defense < power)
         {
-            this.health -= power - this.defense;
+            if (this.defense < power)
+            {
+                this.health -= power - this.defense;
+            }
         }
-    }
    public void Cure()
     {
         this.health = 100;

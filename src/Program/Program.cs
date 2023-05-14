@@ -18,6 +18,11 @@ namespace Program
             roberto.PickUpItem(shield);
             roberto.EquipItems("shield");
             Console.WriteLine(roberto.defense);
+            Wizard wizard1 = new Wizard ("wizard1",10,10);
+            Cane cane1 = new Cane ("cane1");
+            wizard1.PickUpItem(cane1);
+            wizard1.EquipItems("cane1");
+            Console.WriteLine(wizard1.attack);
 
             /*
             Enano enanoVirgo1  = new Enano("Tony", 100 , 0, 0);
