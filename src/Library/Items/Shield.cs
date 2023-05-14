@@ -1,10 +1,10 @@
 namespace RoleplayGame
 {
-    public class Maze : IItems
+    public class Shield : IItems
     {
 
         private string name; 
-        public Maze (string name)
+        public Shield (string name)
         {
             this.name = name;
         }
@@ -20,14 +20,14 @@ namespace RoleplayGame
         {
             get
             {
-                return "Attack";
+                return "Defense";
             }
         }
         public int Value
-        {   
+        {
             get
             {
-                return 14;
+                return 20;
             }
         }
     }
