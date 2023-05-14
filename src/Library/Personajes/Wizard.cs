@@ -7,6 +7,8 @@ public class Wizard : ICharacters
     public int health { get; set; }
     public int attack { get; set; }
     public int defense { get; set; }
+    public SpellsBook spellsBook;
+    public bool hasLearnedSpells;
     List<IItems> inventory;
 
    public Wizard (string name, int attack, int defense)
@@ -17,38 +19,38 @@ public class Wizard : ICharacters
             this.health = 100;
             List<IItems> inventory = new List<IItems>();
         } 
-            public void EquipItems(string item)
+
+    public void EquipItems(string item)
+    {
+
+        for (int i = 0; i < inventory.Count; i++ )
         {
 
-            for (int i = 0; i < inventory.Count; i++ )
+            if(inventory[i].Name == item)
             {
-
-                if(inventory[i].Name == item)
+                if(inventory[i].type == "Attack")
                 {
-                    if(inventory[i].type == "Attack")
-                    {
-                        this.attack += inventory[i].Value;
-                    }
-                     else if(inventory[i].type == "Defense")
-                    {
-                        this.defense += inventory[i].Value;
-                    }
+                    this.attack += inventory[i].Value;
+                }
+                    else if(inventory[i].type == "Defense")
+                {
+                    this.defense += inventory[i].Value;
                 }
             }
         }
+    }
 
-        public void ReceiveAttack(int power)
+    public void ReceiveAttack(int power)
+    {
+        if (this.defense < power)
         {
-            if (this.defense < power)
-            {
-                this.health -= power - this.defense;
-            }
+            this.health -= power - this.defense;
         }
-
-        public void Cure()
-        {
-            this.health = 100;
-        }
+    }
+   public void Cure()
+    {
+        this.health = 100;
+    }
 }
  
     
