@@ -49,5 +49,11 @@ namespace Program
       {
           this.vida = vidaTotal;
       }
+      
+      public void AgregarItem(Mazo mazo)
+      {
+      this.defensa += mazo.Defensa;
+      this.danio += mazo.Ataque;
+      }
     }
 }
