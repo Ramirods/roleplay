@@ -14,7 +14,7 @@ namespace RoleplayGame
             this.name = name;
             this.attack = attack;
             this.defense = defense;
-            this.health = 100;
+            this.health = 80;
             List<IItems> inventory = new List<IItems>();
         } 
 
@@ -56,7 +56,7 @@ namespace RoleplayGame
 
         public void Cure()
         {
-            this.health = 100;
+            this.health = 80;
         }
     }
 }
