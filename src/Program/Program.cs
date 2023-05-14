@@ -13,6 +13,11 @@ namespace Program
             guillermo.PickUpItem(maze);
             guillermo.EquipItems("maze");
             Console.WriteLine(guillermo.attack);
+            Elf roberto = new Elf("Roberto",0,0);
+            Shield shield = new Shield("shield");
+            roberto.PickUpItem(shield);
+            roberto.EquipItems("shield");
+            Console.WriteLine(roberto.defense);
 
             /*
             Enano enanoVirgo1  = new Enano("Tony", 100 , 0, 0);
