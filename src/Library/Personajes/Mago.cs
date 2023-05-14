@@ -3,14 +3,15 @@ namespace Program;
 
 public class Mago
 {
-    private int vida=100;
     private string name;
-    
+    private int vida;
     private int daño;
     private int defensa;
-    public Mago(string name,int daño,int defensa)
+
+    public Mago(string name,int vida,int daño,int defensa)
     {
         this.Name = name;
+        this.Vida = vida;
         this.Daño = daño;
         this.Defensa = defensa;
     }
