@@ -3,7 +3,7 @@ using System;
 public class Mago
 {
     private int vida=100;
-    public Mago(string name)
+    public Mago(string name,int daño,int defensa)
     {
         this.Name = name;
     }
