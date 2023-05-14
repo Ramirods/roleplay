@@ -12,7 +12,7 @@ namespace Program
             Elfo elfo1 = new Elfo("Elfanfarron", 100, 0, 0);
             Escudo escudo1 = new Escudo("Muro", 10, 50);
             Varita varita1 = new Varita("Palito", 80, 10);
-            Mago mago1 = new Mago("Roberto", 100, 0, 0);
+            Mago mago1 = new Mago("Roberto",100, 0, 0);
             Escoba escoba1 = new Escoba("Barredora", 20, 10);
             Baston baston1 = new Baston("Vencedor", 40, 20);
             elfo1.AgregarItem(mazo1);
