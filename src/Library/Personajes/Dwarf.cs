@@ -19,6 +19,7 @@ namespace RoleplayGame
         } 
 
 
+
         public void EquipItems(string item)
         {
 
@@ -37,6 +38,12 @@ namespace RoleplayGame
                     }
                 }
             }
+        }
+
+        
+        public void PickUpItem(IItems item)
+        {
+            this.inventory.Add(item);
         }
 
         public void ReceiveAttack(int power)
