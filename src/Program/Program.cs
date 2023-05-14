@@ -1,5 +1,5 @@
 ﻿using System;
-
+using RoleplayGame;
 namespace Program
 {
     class Program
@@ -13,6 +13,11 @@ namespace Program
             Console.WriteLine(guillermo.attack);
             Elfo elfo1 = new Elfo("Elfanfarron", 100, 0, 0);
             Maze maze = new Maze("Rompedor", 40, 20);
+            Wizard wizard1 = new Wizard("Eduard",0,0);
+            Broom broom1 = new Broom("broom1");
+            wizard1.PickUpItem(broom1);
+            wizard1.EquipItems("broom1");
+            Console.WriteLine(wizard1.attack);
             /*
             Enano enanoVirgo1  = new Enano("Tony", 100 , 0, 0);
             Enano enano1  = new Enano("Tony", 100 , 0, 0);

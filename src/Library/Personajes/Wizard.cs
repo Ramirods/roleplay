@@ -39,6 +39,10 @@ public class Wizard : ICharacters
             }
         }
     }
+    public void PickUpItem(IItems item)
+    {
+        this.inventory.Add(item);
+    }
 
     public void ReceiveAttack(int power)
     {
