@@ -7,7 +7,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            
+
             Dwarf guillermo = new Dwarf ("Guillermo",0,0);
             Maze maze = new Maze("maze");
             guillermo.PickUpItem(maze);
