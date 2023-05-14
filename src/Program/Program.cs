@@ -6,7 +6,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Enano enanoVirgo1  = new Enano("Tony", 100 , 0, 0); 
+            Enano enanoVirgo1  = new Enano("Tony", 100 , 0, 0);
             Pony pony1 = new Pony("Facu", 10, 10);
             Mazo mazo1 = new Mazo("Rompedor", 40, 20);
             Elfo elfo1 = new Elfo("Elfanfarron", 100, 0, 0);

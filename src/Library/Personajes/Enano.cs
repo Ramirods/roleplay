@@ -50,5 +50,11 @@ namespace Program
           this.vida = vidaTotal;
       }
 
+      public void AgregarItem(int danioItem, int defensaItem)
+      {
+      this.defensa += defensaItem;
+      this.danio += danioItem;
+      }
+
     }
 }
