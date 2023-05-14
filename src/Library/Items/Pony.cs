@@ -1,27 +1,34 @@
-namespace Program
+namespace RoleplayGame
 {
-   //Se declara la clase
-   public class Pony {
+    public class poni : IItems
+    {
 
-      //Se definen los atributos/propiedades
-      private string nombre;
-      private int ataque;
-      private int defensa;
+        private string name; 
+        public poni (string name)
+        {
+            this.name = name;
+        }
+        public string Name 
+        {
+            get
+            {
+                return name;
+            }
 
-      //constructor
-      public Pony(string nombre, int ataque, int defensa){
-         this.Nombre = nombre;
-         this.Ataque = ataque;
-         this.Defensa = defensa;
-      }
-
-      //getters and seters
-      public string Nombre { get; private set; }
-
-      public int Ataque { get; private set; }
-      public int Defensa { get; private set; }
-
-   }
-
-
+        }
+        public string type
+        {
+            get
+            {
+                return "Defense";
+            }
+        }
+        public int Value
+        {   
+            get
+            {
+                return 20;
+            }
+        }
+    }
 }
