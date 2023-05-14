@@ -14,12 +14,11 @@ public class Mago
         this.Daño = daño;
         this.Defensa = defensa;
     }
+    
     public string Name{ get{return this.name;}set{this.name = value;}}
-
-      public int Vida{get{return this.vida;}set{this.vida = value;}}
-
-      public int Daño{get{return this.daño;}set{this.daño = value;}}
-      public int Defensa{get{return this.defensa;}set{this.defensa = value;}}
+    public int Vida{get{return this.vida;}set{this.vida = value;}}
+    public int Daño{get{return this.daño;}set{this.daño = value;}}
+    public int Defensa{get{return this.defensa;}set{this.defensa = value;}}
 
     public void RecibirDaño(int dañoRecibido)
     {
