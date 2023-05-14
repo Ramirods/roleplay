@@ -7,9 +7,9 @@ namespace Program
         static void Main(string[] args)
         {
             Dwarf guillermo = new Dwarf ("Guillermo",0,0,100);
-            Bow arco = new Bow("arco");
-            guillermo.PickUpItem(arco);
-            guillermo.EquipItems("arco");
+            Bow maze = new Bow("maze");
+            guillermo.PickUpItem(maze);
+            guillermo.EquipItems("maze");
             Console.WriteLine(guillermo.attack);
 
 
