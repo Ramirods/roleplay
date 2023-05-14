@@ -21,6 +21,10 @@ namespace Test.Library
             Assert.AreEqual(legolas.Vida, expected); 
        
         }
- 
+        [Test]
+        public void RecibirDañoMago()
+        {
+            
+        }
     }
 }
