@@ -11,8 +11,8 @@ namespace Program
             guillermo.PickUpItem(maze);
             guillermo.EquipItems("maze");
             Console.WriteLine(guillermo.attack);
-            Elfo elfo1 = new Elfo("Elfanfarron", 100, 0, 0);
-            Maze maze = new Maze("Rompedor", 40, 20);
+            Elf roberto = new Elf ("Roberto",0,0,100);
+            
             /*
             Enano enanoVirgo1  = new Enano("Tony", 100 , 0, 0);
             Enano enano1  = new Enano("Tony", 100 , 0, 0);
