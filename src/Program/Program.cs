@@ -1,6 +1,6 @@
 ﻿using System;
 using RoleplayGame;
-using RoleplayGame;
+
 namespace Program
 {
     class Program
@@ -13,8 +13,12 @@ namespace Program
             guillermo.PickUpItem(maze);
             guillermo.EquipItems("maze");
             Console.WriteLine(guillermo.attack);
-            Elfo elfo1 = new Elfo("Elfanfarron", 100, 0, 0);
-            Maze maze = new Maze("Rompedor", 40, 20);
+            Elf roberto = new Elf("Roberto",0,0);
+            Shield shield = new Shield("shield");
+            roberto.PickUpItem(shield);
+            roberto.EquipItems("shield");
+            Console.WriteLine(roberto.defense);
+
             /*
             Enano enanoVirgo1  = new Enano("Tony", 100 , 0, 0);
             Enano enano1  = new Enano("Tony", 100 , 0, 0);
