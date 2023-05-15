@@ -69,5 +69,16 @@ namespace Test.Library
             wizard1.Cure();
             Assert.AreEqual(wizard1.health, expected);
         }
+
+        [Test]
+        public void CureHealthElf()
+        {
+            int expected = 80;
+            Elf elf1 = new Elf("Elf1", 10, 10);
+            Elf elf2 = new Elf("Elf1", 70, 20);
+            elf1.ReceiveAttack(elf2.attack);
+            elf1.Cure();
+            Assert.AreEqual(elf1.health, expected);
+        }
     }
 }
