@@ -48,6 +48,7 @@ namespace Test.Library
 
         }
 
+
          [Test]
         public void RecibirDanio2()
         {
@@ -56,8 +57,8 @@ namespace Test.Library
             Elf elfo1  = new Elf("Robyy", 20, 10);
             bajito.ReceiveAttack(elfo1.attack);
             Assert.AreEqual(bajito.health, expected); 
-       
         }
+
 
         [Test]
         public void CureHealthWizard()
