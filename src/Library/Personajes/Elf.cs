@@ -7,7 +7,7 @@ namespace RoleplayGame
         public int health { get; set; } 
         public int attack { get; set; }
         public int defense { get; set; }
-        List<IItems> inventory;
+        List<IItems> inventory = new List<IItems>();
 
         public Elf(string name, int attack, int defense)
         {
